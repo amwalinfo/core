@@ -1,0 +1,70 @@
+main {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main > article, section, aside {
+    flex:1;
+}
+main > section {
+    max-width: 60%;
+}
+main > article {
+    max-width: 67%;
+}
+main > aside {
+    max-width: 33%;
+}
+
+main > article, aside {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+body >header {
+    width: 100%;
+    min-height: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+body > footer {
+    max-width: 100%;
+    border-top: 1px solid var(--border-color);;
+    min-height 1px;
+}
+@import url('https://fonts.googleapis.com/css?family=Public+Sans:400,400i,600,700&display=swap');
+
+:root {
+    --font-family: 'Public Sans', sans-serif;
+    --font-weight: 400;
+    --line-height: 1.45;
+    --border-color: rgba(233,233,238,1)
+}
+
+html {font-size: 100%; }
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+body {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    line-height: var(--line-height);
+        
+}
+
+figure, img, iframe {border: none; max-width: 100%}
+
+a {color: var(--c1);  text-decoration:none}
+
+a:hover {color: var(--c1); text-decoration: underline}
